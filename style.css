@@ -43,9 +43,10 @@ h1 {
     margin: 1.5rem 0;
 }
 
-.center-image {
-    width: 100px;
-    height: 100px;
+.responsive-image {
+    width: 60%; /* Adjusts based on container width */
+    max-width: 150px; /* Sets a maximum size */
+    height: auto;
     border-radius: 50%;
     border: 2px solid #444;
 }
@@ -69,4 +70,20 @@ h1 {
 
 .cta-button:hover {
     background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.7rem 1.3rem;
+        font-size: 0.9rem;
+    }
 }
