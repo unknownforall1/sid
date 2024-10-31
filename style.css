@@ -44,7 +44,7 @@ h1 {
 }
 
 .responsive-image {
-    width: 60%; /* Adjusts based on container width */
+    width: 75%; /* Adjusts based on container width */
     max-width: 150px; /* Sets a maximum size */
     height: auto;
     border-radius: 50%;
@@ -64,7 +64,7 @@ h1 {
     color: #ffffff;
     background-color: #007bff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     transition: background-color 0.3s ease;
 }
 
