@@ -45,7 +45,7 @@ h1 {
 
 .responsive-image {
     width: 60%; /* Adjusts based on container width */
-    max-width: 50px; /* Sets a maximum size */
+    max-width: 80px; /* Sets a maximum size */
     height: auto;
     border-radius: 50%;
     border: 2px solid #444;
@@ -73,7 +73,7 @@ h1 {
 }
 
 /* Responsive adjustments */
-@media (max-width: 60px) {
+@media (max-width: 100px) {
     h1 {
         font-size: 1.8rem;
     }
