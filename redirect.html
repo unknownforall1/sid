@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting</title>
+</head>
+<body>
+    <h1 id="message">Redirecting...</h1>
+    <script>
+        // Function to get URL parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Get the Telegram username from the URL
+        const username = getQueryParam('TelegramUsername');
+
+        if (username) {
+            // Create the channel link and display the message
+            const channelLink = `https://t.me/${username}`;
+            document.getElementById('message').innerText = `I'm redirecting you to ${username}'s channel...`;
+
+            // Redirect after 3 seconds
+            setTimeout(() => {
+                window.location.href = channelLink;
+            }, 3000);
+        } else {
+            document.getElementById('message').innerText = "No Telegram username provided.";
+        }
+    </script>
+</body>
+</html>
